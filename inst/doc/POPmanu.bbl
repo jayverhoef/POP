@@ -1,0 +1,354 @@
+\begin{thebibliography}{56}
+\newcommand{\enquote}[1]{``#1''}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Ara{\'u}jo et~al.(2019)Ara{\'u}jo, Anderson, Barbosa, Beale, Dormann,
+  Early, Garcia, Guisan, Maiorano, Naimi, O'Hara, Zimmermann, and
+  Rahbek}]{araujo_standards_2019}
+Ara{\'u}jo, M.~B., Anderson, R.~P., Barbosa, A.~M., Beale, C.~M., Dormann,
+  C.~F., Early, R., Garcia, R.~A., Guisan, A., Maiorano, L., Naimi, B., O'Hara,
+  R.~B., Zimmermann, N.~E., and Rahbek, C. (2019), \enquote{Standards for
+  distribution models in biodiversity assessments,} \textit{Science Advances},
+  5, eaat4858.
+
+\bibitem[{Austin(2007)}]{austin_species_2007}
+Austin, M. (2007), \enquote{Species distribution models and ecological theory:
+  {A} critical assessment and some possible new approaches,} \textit{Ecological
+  Modelling}, 200, 1--19.
+
+\bibitem[{Austin(2002)}]{austin_spatial_2002}
+Austin, M.~P. (2002), \enquote{Spatial prediction of species distribution: an
+  interface between ecological theory and statistical modelling,}
+  \textit{Ecological Modelling}, 157, 101--118.
+
+\bibitem[{Babcock et~al.(2015)Babcock, Finley, Bradford, Kolka, Birdsey, and
+  Ryan}]{babcock_lidar_2015}
+Babcock, C., Finley, A.~O., Bradford, J.~B., Kolka, R., Birdsey, R., and Ryan,
+  M.~G. (2015), \enquote{{LiDAR} based prediction of forest biomass using
+  hierarchical models with spatially varying coefficients,} \textit{Remote
+  Sensing of Environment}, 169, 113--127.
+
+\bibitem[{Banerjee et~al.(2008)Banerjee, Gelfand, Finley, and
+  Sang}]{BanerjeeEtAl2008Gaussianpredictiveprocess825}
+Banerjee, S., Gelfand, A.~E., Finley, A.~O., and Sang, H. (2008),
+  \enquote{Gaussian predictive process models for large spatial data sets,}
+  \textit{Journal of the Royal Statistical Society: Series B (Statistical
+  Methodology)}, 70, 825--848.
+
+\bibitem[{Besag(1974)}]{Besag1974SpatialInteractionStatistical192}
+Besag, J. (1974), \enquote{Spatial interaction and the statistical analysis of
+  lattice systems (with discussion),} \textit{Journal of the Royal Statistical
+  Society, Series B}, 36, 192--236.
+
+\bibitem[{Besag(1994)}]{besag_discussion_1994}
+Besag, J.~E. (1994), \enquote{Discussion to the paper: {Representation} of
+  knowledge in complex systems. by {Grenander}, {U}. and {M}.{I}. {Miller}.}
+  \textit{Journal of the Royal Statistical Society, Series B}, 56, 549--603.
+
+\bibitem[{Bird et~al.(2014)Bird, Bates, Lefcheck, Hill, Thomson, Edgar,
+  Stuart-Smith, Wotherspoon, Krkosek, Stuart-Smith, Pecl, Barrett, and
+  Frusher}]{bird_statistical_2014}
+Bird, T.~J., Bates, A.~E., Lefcheck, J.~S., Hill, N.~A., Thomson, R.~J., Edgar,
+  G.~J., Stuart-Smith, R.~D., Wotherspoon, S., Krkosek, M., Stuart-Smith,
+  J.~F., Pecl, G.~T., Barrett, N., and Frusher, S. (2014), \enquote{Statistical
+  solutions for error and bias in global citizen science datasets,}
+  \textit{Biological Conservation}, 173, 144--154.
+
+\bibitem[{Chen et~al.(2016)Chen, So, Li, and
+  Sriboonchitta}]{chen_autoregressive_2016}
+Chen, C.~W., So, M.~K., Li, J.~C., and Sriboonchitta, S. (2016),
+  \enquote{Autoregressive conditional negative binomial model applied to
+  over-dispersed time series of counts,} \textit{Statistical Methodology}, 31,
+  73--90.
+
+\bibitem[{Conn et~al.(2015{\natexlab{a}})Conn, Johnson, and
+  Boveng}]{conn_extrapolating_2015}
+Conn, P.~B., Johnson, D.~S., and Boveng, P.~L. (2015{\natexlab{a}}),
+  \enquote{On extrapolating past the range of observed data when making
+  statistical predictions in ecology,} \textit{PLoS One}, 10, e0141416.
+
+\bibitem[{Conn et~al.(2015{\natexlab{b}})Conn, Johnson, Ver~Hoef, Hooten,
+  London, and Boveng}]{conn_using_2015}
+Conn, P.~B., Johnson, D.~S., Ver~Hoef, J.~M., Hooten, M.~B., London, J.~M., and
+  Boveng, P.~L. (2015{\natexlab{b}}), \enquote{Using spatiotemporal statistical
+  models to estimate animal abundance and infer ecological dynamics from survey
+  counts,} \textit{Ecological Monographs}, 85, 235--252.
+
+\bibitem[{Conn et~al.(2018)Conn, Johnson, Williams, Melin, and
+  Hooten}]{conn_guide_2018}
+Conn, P.~B., Johnson, D.~S., Williams, P.~J., Melin, S.~R., and Hooten, M.~B.
+  (2018), \enquote{A guide to {Bayesian} model checking for ecologists,}
+  \textit{Ecological Monographs}, 88, 526--542.
+
+\bibitem[{Conn et~al.(2017)Conn, Thorson, and Johnson}]{conn_confronting_2017}
+Conn, P.~B., Thorson, J.~T., and Johnson, D.~S. (2017), \enquote{Confronting
+  preferential sampling when analysing population distributions: diagnosis and
+  model-based triage,} \textit{Methods in Ecology and Evolution}, 8,
+  1535--1546.
+
+\bibitem[{Daniel et~al.(2020)Daniel, Horrocks, and
+  Umphrey}]{daniel_efficient_2020}
+Daniel, J., Horrocks, J., and Umphrey, G.~J. (2020), \enquote{Efficient
+  modelling of presence-only species data via local background sampling,}
+  \textit{Journal of Agricultural, Biological and Environmental Statistics},
+  25, 90--111.
+
+\bibitem[{Elith et~al.(2006)Elith, Graham, Anderson, Dud{\'i}k, Ferrier,
+  Guisan, Hijmans, Huettmann, Leathwick, Lehmann, Li, Lohmann, Loiselle,
+  Manion, Moritz, Nakamura, Nakazawa, Overton, Peterson, Phillips, Richardson,
+  Scachetti-Pereira, Schapire, Sober{\'o}n, Williams, Wisz, and
+  Zimmermann}]{elith_novel_2006}
+Elith, J., Graham, C.~H., Anderson, R.~P., Dud{\'i}k, M., Ferrier, S., Guisan,
+  A., Hijmans, R.~J., Huettmann, F., Leathwick, J.~R., Lehmann, A., Li, J.,
+  Lohmann, L.~G., Loiselle, B.~A., Manion, G., Moritz, C., Nakamura, M.,
+  Nakazawa, Y., Overton, J. M.~M., Peterson, A.~T., Phillips, S.~J.,
+  Richardson, K., Scachetti-Pereira, R., Schapire, R.~E., Sober{\'o}n, J.,
+  Williams, S., Wisz, M.~S., and Zimmermann, N.~E. (2006), \enquote{Novel
+  methods improve prediction of species{\textquoteright} distributions from
+  occurrence data,} \textit{Ecography}, 29, 129--151.
+
+\bibitem[{Elith and Leathwick(2009)}]{elith_species_2009}
+Elith, J. and Leathwick, J.~R. (2009), \enquote{Species distribution models:
+  {Ecological} explanation and prediction across space and time,}
+  \textit{Annual Review of Ecology, Evolution, and Systematics}, 40, 677--697.
+
+\bibitem[{Fithian and Hastie(2014)}]{fithian_local_2014}
+Fithian, W. and Hastie, T. (2014), \enquote{Local case-control sampling:
+  {Efficient} subsampling in imbalanced data sets,} \textit{Annals of
+  Statistics}, 42, 1693--1724.
+
+\bibitem[{Flegal et~al.(2008)Flegal, Haran, and Jones}]{flegal_markov_2008}
+Flegal, J.~M., Haran, M., and Jones, G.~L. (2008), \enquote{Markov chain
+  {Monte} {Carlo}: {Can} we trust the third significant figure?}
+  \textit{Statistical Science}, 23, 250--260.
+
+\bibitem[{Gelman et~al.(2013)Gelman, Carlin, Stern, Dunson, Vehtari, and
+  Rubin}]{gelman_bayesian_2013}
+Gelman, A., Carlin, J.~B., Stern, H.~S., Dunson, D.~B., Vehtari, A., and Rubin,
+  D.~B. (2013), \textit{Bayesian {Data} {Analysis}}, CRC Press, Boca Raton, FL,
+  USA.
+
+\bibitem[{Gomes et~al.(2018)Gomes, IJff, Raes, Amaral, Salom{\~a}o,
+  de~Souza~Coelho, de~Almeida~Matos, Castilho, de~Andrade Lima~Filho, and
+  L{\'o}pez}]{gomes_species_2018}
+Gomes, V.~H., IJff, S.~D., Raes, N., Amaral, I.~L., Salom{\~a}o, R.~P.,
+  de~Souza~Coelho, L., de~Almeida~Matos, F.~D., Castilho, C.~V., de~Andrade
+  Lima~Filho, D., and L{\'o}pez, D.~C. (2018), \enquote{Species {Distribution}
+  {Modelling}: {Contrasting} presence-only models with plot abundance data,}
+  \textit{Scientific Reports}, 8, 1--12.
+
+\bibitem[{Gong and Flegal(2016)}]{gong_practical_2016}
+Gong, L. and Flegal, J.~M. (2016), \enquote{A practical sequential stopping
+  rule for high-dimensional {Markov} chain {Monte} {Carlo},} \textit{Journal of
+  Computational and Graphical Statistics}, 25, 684--700.
+
+\bibitem[{Gu{\'e}lat and K{\'e}ry(2018)}]{guelat_effects_2018}
+Gu{\'e}lat, J. and K{\'e}ry, M. (2018), \enquote{Effects of spatial
+  autocorrelation and imperfect detection on species distribution models,}
+  \textit{Methods in Ecology and Evolution}, 9, 1614--1625.
+
+\bibitem[{Guisan et~al.(2013)Guisan, Tingley, Baumgartner, Naujokaitis-Lewis,
+  Sutcliffe, Tulloch, Regan, Brotons, McDonald-Madden, and
+  Mantyka-Pringle}]{guisan_predicting_2013}
+Guisan, A., Tingley, R., Baumgartner, J.~B., Naujokaitis-Lewis, I., Sutcliffe,
+  P.~R., Tulloch, A.~I., Regan, T.~J., Brotons, L., McDonald-Madden, E., and
+  Mantyka-Pringle, C. (2013), \enquote{Predicting species distributions for
+  conservation decisions,} \textit{Ecology Letters}, 16, 1424--1435.
+
+\bibitem[{Hefley and Hooten(2016)}]{hefley_hierarchical_2016}
+Hefley, T.~J. and Hooten, M.~B. (2016), \enquote{Hierarchical species
+  distribution models,} \textit{Current Landscape Ecology Reports}, 1, 87--97.
+
+\bibitem[{Higham(2019)}]{higham_spatial_2019}
+Higham, M. (2019), \enquote{Spatial {Prediction} for {Finite} {Populations}
+  with {Ecological} {Applications},} Ph.D. thesis, Oregon State University,
+  Corvallis, OR.
+
+\bibitem[{Himes~Boor and Small(2012)}]{HimesBoorEtAl2012Stellersealion}
+Himes~Boor, G.~K. and Small, R.~J. (2012), \enquote{Steller sea lion
+  spatial-use patterns derived from a {Bayesian} model of opportunistic
+  observations,} \textit{Marine Mammal Science}, 28, E375--E403.
+
+\bibitem[{Hooten et~al.(2010)Hooten, Johnson, Hanks, and
+  Lowry}]{hooten_agent-based_2010}
+Hooten, M.~B., Johnson, D.~S., Hanks, E.~M., and Lowry, J.~H. (2010),
+  \enquote{Agent-based inference for animal movement and selection,}
+  \textit{Journal of Agricultural, Biological and Environmental Statistics},
+  15, 523--538.
+
+\bibitem[{Horvitz and Thompson(1952)}]{horvitz_generalization_1952}
+Horvitz, D.~G. and Thompson, D.~J. (1952), \enquote{A generalization of
+  sampling without replacement from a finite universe,} \textit{Journal of the
+  American Statistical Association}, 47, 663--685.
+
+\bibitem[{Kelling et~al.(2019)Kelling, Johnston, Bonn, Fink, Ruiz-Gutierrez,
+  Bonney, Fernandez, Hochachka, Julliard, Kraemer, and
+  Guralnick}]{kelling_using_2019}
+Kelling, S., Johnston, A., Bonn, A., Fink, D., Ruiz-Gutierrez, V., Bonney, R.,
+  Fernandez, M., Hochachka, W.~M., Julliard, R., Kraemer, R., and Guralnick, R.
+  (2019), \enquote{Using semistructured surveys to improve citizen science data
+  for monitoring biodiversity,} \textit{BioScience}, 69, 170--179.
+
+\bibitem[{K{\'e}ry and Royle(2016)}]{kery_applied_2016}
+K{\'e}ry, M. and Royle, J.~A. (2016), \textit{Applied {Hierarchical} {Modeling}
+  in {Ecology}: {Analysis} of {Distribution}, {Abundance} and {Species}
+  {Richness} in {R} and {BUGS}}, Amsterdam, The Netherlands: Academic Press.
+
+\bibitem[{Krebs(1972)}]{Krebs1972Ecologyexperimentalanalysis}
+Krebs, C. (1972), \textit{Ecology: {The} {Experimental} {Analysis} of
+  {Distribution} and {Analysis}}, New York, NY: Harper and Row.
+
+\bibitem[{Lukyanenko et~al.(2020)Lukyanenko, Wiggins, and
+  Rosser}]{lukyanenko_citizen_2020}
+Lukyanenko, R., Wiggins, A., and Rosser, H.~K. (2020), \enquote{Citizen
+  science: {An} information quality research frontier,} \textit{Information
+  Systems Frontiers}, 22, 961--983.
+
+\bibitem[{Miller-Rushing et~al.(2012)Miller-Rushing, Primack, and
+  Bonney}]{miller-rushing_history_2012}
+Miller-Rushing, A., Primack, R., and Bonney, R. (2012), \enquote{The history of
+  public participation in ecological research,} \textit{Frontiers in Ecology
+  and the Environment}, 10, 285--290.
+
+\bibitem[{Mohebbi et~al.(2014)Mohebbi, Wolfe, and
+  Forbes}]{mohebbi_disease_2014}
+Mohebbi, M., Wolfe, R., and Forbes, A. (2014), \enquote{Disease mapping and
+  regression with count data in the presence of overdispersion and spatial
+  autocorrelation: {A} {Bayesian} model averaging approach,}
+  \textit{International Journal of Environmental Research and Public Health},
+  11, 883--902.
+
+\bibitem[{M{\o}ller et~al.(1998)M{\o}ller, Syversveen, and
+  Waagepetersen}]{moller_log_1998}
+M{\o}ller, J., Syversveen, A.~R., and Waagepetersen, R.~P. (1998), \enquote{Log
+  {Gaussian} {Cox} processes,} \textit{Scandinavian Journal of Statistics}, 25,
+  451--482.
+
+\bibitem[{Muto et~al.(2019)Muto, Helker, Angliss, Boveng, Breiwick, Cameron,
+  Clapham, Dahle, Dahlheim, Fadely, Ferguson, Fritz, Hobbs, Ivashchenko,
+  Kennedy, London, Mizroch, Ream, Richmond, Shelden, Sweeney, Towell, Wade,
+  Waite, and Zerbini}]{muto_alaska_2019}
+Muto, M.~M., Helker, V.~T., Angliss, R.~P., Boveng, P.~L., Breiwick, J.~M.,
+  Cameron, M.~F., Clapham, P., Dahle, S.~P., Dahlheim, M.~E., Fadely, B.~S.,
+  Ferguson, M.~C., Fritz, L.~W., Hobbs, R.~C., Ivashchenko, Y.~V., Kennedy,
+  A.~S., London, J.~M., Mizroch, S.~A., Ream, R.~R., Richmond, E.~L., Shelden,
+  K. E.~W., Sweeney, K.~L., Towell, R.~G., Wade, P.~R., Waite, J.~M., and
+  Zerbini, A.~N. (2019), \enquote{Alaska {Marine} {Mammal} {Stock}
+  {Assessments}, 2018,} Tech. Rep. NOAA Technical Memorandum NMFS-AFSC-393,
+  U.S. Department of Commerce.
+
+\bibitem[{Pearce and Boyce(2006)}]{pearce_modelling_2006}
+Pearce, J.~L. and Boyce, M.~S. (2006), \enquote{Modelling distribution and
+  abundance with presence-only data,} \textit{Journal of Applied Ecology}, 43,
+  405--412.
+
+\bibitem[{Phillips et~al.(2006)Phillips, Anderson, and
+  Schapire}]{phillips_maximum_2006}
+Phillips, S.~J., Anderson, R.~P., and Schapire, R.~E. (2006), \enquote{Maximum
+  entropy modeling of species geographic distributions,} \textit{Ecological
+  Modelling}, 190, 231--259.
+
+\bibitem[{Phillips et~al.(2009)Phillips, Dud{\'i}k, Elith, Graham, Lehmann,
+  Leathwick, and Ferrier}]{phillips_sample_2009}
+Phillips, S.~J., Dud{\'i}k, M., Elith, J., Graham, C.~H., Lehmann, A.,
+  Leathwick, J., and Ferrier, S. (2009), \enquote{Sample selection bias and
+  presence-only distribution models: {Implications} for background and
+  pseudo-absence data,} \textit{Ecological Applications}, 19, 181--197.
+
+\bibitem[{Randin et~al.(2006)Randin, Dirnb{\"o}ck, Dullinger, Zimmermann,
+  Zappa, and Guisan}]{randin_are_2006}
+Randin, C.~F., Dirnb{\"o}ck, T., Dullinger, S., Zimmermann, N.~E., Zappa, M.,
+  and Guisan, A. (2006), \enquote{Are niche-based species distribution models
+  transferable in space?} \textit{Journal of Biogeography}, 33, 1689--1703.
+
+\bibitem[{Rathbun and Cressie(1994)}]{rathbun_space-time_1994}
+Rathbun, S.~L. and Cressie, N. (1994), \enquote{A space-time survival point
+  process for a longleaf pine forest in southern {Georgia},} \textit{Journal of
+  the American Statistical Association}, 89, 1164--1174.
+
+\bibitem[{Renner et~al.(2015)Renner, Elith, Baddeley, Fithian, Hastie,
+  Phillips, Popovic, and Warton}]{renner_point_2015}
+Renner, I.~W., Elith, J., Baddeley, A., Fithian, W., Hastie, T., Phillips,
+  S.~J., Popovic, G., and Warton, D.~I. (2015), \enquote{Point process models
+  for presence-only analysis,} \textit{Methods in Ecology and Evolution}, 6,
+  366--379.
+
+\bibitem[{Renner and Warton(2013)}]{renner_equivalence_2013}
+Renner, I.~W. and Warton, D.~I. (2013), \enquote{Equivalence of {MAXENT} and
+  {Poisson} point process models for species distribution modeling in ecology,}
+  \textit{Biometrics}, 69, 274--281.
+
+\bibitem[{Robinson et~al.(2017)Robinson, Nelson, Costello, Sutherland, and
+  Lundquist}]{robinson_systematic_2017}
+Robinson, N.~M., Nelson, W.~A., Costello, M.~J., Sutherland, J.~E., and
+  Lundquist, C.~J. (2017), \enquote{A systematic review of marine-based species
+  distribution models ({SDMS}) with recommendations for best practice,}
+  \textit{Frontiers in Marine Science}, 4, 421 doi:10.3389/fmars.2017.00421.
+
+\bibitem[{Rue et~al.(2009)Rue, Martino, and Chopin}]{rue_approximate_2009}
+Rue, H., Martino, S., and Chopin, N. (2009), \enquote{Approximate {Bayesian}
+  inference for latent {Gaussian} models by using integrated nested {Laplace}
+  approximations,} \textit{Journal of the Royal Statistical Society: Series B
+  (Statistical Methodology)}, 71, 319--392.
+
+\bibitem[{Sober{\'o}n(2007)}]{soberon_grinnellian_2007}
+Sober{\'o}n, J. (2007), \enquote{Grinnellian and {Eltonian} niches and
+  geographic distributions of species,} \textit{Ecology Letters}, 10,
+  1115--1123.
+
+\bibitem[{Soroye et~al.(2018)Soroye, Ahmed, and
+  Kerr}]{soroye_opportunistic_2018}
+Soroye, P., Ahmed, N., and Kerr, J.~T. (2018), \enquote{Opportunistic citizen
+  science data transform understanding of species distributions, phenology, and
+  diversity gradients for global change research,} \textit{Global Change
+  Biology}, 24, 5281--5291.
+
+\bibitem[{Stockwell and Peterson(2002)}]{stockwell_controlling_2002}
+Stockwell, D. R.~B. and Peterson, A.~T. (2002), \enquote{Controlling bias in
+  biodiversity data,} in \textit{Predicting {Species} {Occurrences}: {Issues}
+  of {Scale} and {Accuracy}}, (eds. J.M. Scott, P.J. Heglund, M.L. Morrison,
+  J.B. Haufler, M.G. Raphael, W.A. Wall \& F.B. Samson), Island Press,
+  Washington, DC, pp. 537--546.
+
+\bibitem[{{Student}(1908)}]{student_probable_1908}
+{Student} (1908), \enquote{Probable error of a correlation coefficient,}
+  \textit{Biometrika}, 6, 302--310.
+
+\bibitem[{Teng et~al.(2017)Teng, Nathoo, and Johnson}]{teng_bayesian_2017}
+Teng, M., Nathoo, F., and Johnson, T.~D. (2017), \enquote{Bayesian computation
+  for log-{Gaussian} {Cox} processes: {A} comparative analysis of methods,}
+  \textit{Journal of Statistical Computation and Simulation}, 87, 2227--2252.
+
+\bibitem[{Ver~Hoef and
+  Boveng(2007)}]{VerHoefEtAl2007QuasiPoissonvsnegative2766}
+Ver~Hoef, J.~M. and Boveng, P.~L. (2007), \enquote{Quasi-{Poisson} vs. negative
+  binomial regression: {How} should we model overdispersed count data?}
+  \textit{Ecology}, 88, 2766--2772.
+
+\bibitem[{Ver~Hoef et~al.(2018)Ver~Hoef, Peterson, Hooten, Hanks, and
+  Fortin}]{VerHoefEtAl2018Spatialautoregressivemodels36}
+Ver~Hoef, J.~M., Peterson, E.~E., Hooten, M.~B., Hanks, E.~M., and Fortin,
+  M.-J. (2018), \enquote{Spatial autoregressive models for statistical
+  inference from ecological data,} \textit{Ecological Monographs}, 88, 36--59.
+
+\bibitem[{Wakefield(2007)}]{wakefield_disease_2007}
+Wakefield, J. (2007), \enquote{Disease mapping and spatial regression with
+  count data,} \textit{Biostatistics}, 8, 158--183.
+
+\bibitem[{Warton et~al.(2013)Warton, Renner, and
+  Ramp}]{warton_model-based_2013}
+Warton, D.~I., Renner, I.~W., and Ramp, D. (2013), \enquote{Model-based control
+  of observer bias for the analysis of presence-only data in ecology,}
+  \textit{PLOS ONE}, 8, e79168.
+
+\bibitem[{Warton and Shepherd(2010)}]{warton_poisson_2010}
+Warton, D.~I. and Shepherd, L.~C. (2010), \enquote{Poisson point process models
+  solve the {\textquotedblleft}pseudo-absence problem{\textquotedblright} for
+  presence-only data in ecology,} \textit{The Annals of Applied Statistics}, 4,
+  1383--1402.
+
+\bibitem[{Zhu(2011)}]{zhu_negative_2011}
+Zhu, F. (2011), \enquote{A negative binomial integer-valued {GARCH} model,}
+  \textit{Journal of Time Series Analysis}, 32, 54--67.
+
+\end{thebibliography}

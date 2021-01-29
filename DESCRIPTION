@@ -1,0 +1,12 @@
+Package: POP
+Type: Package
+Title: Platform of Opportunity Data and Models
+Version: 1.0.0
+Date: 2021-01-20
+Depends: R (>= 4.0) 
+Author: Jay Ver Hoef
+Maintainer: Jay Ver Hoef <jay.verhoef@gmail.com>
+Description: Platform of Opportunity Data and Models
+License: GPL-2
+LazyLoad: yes
+RoxygenNote: 7.1.1
