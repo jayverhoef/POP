@@ -34,14 +34,14 @@ Abstract
 Installation
 ------------
 
-Installation of this R data package is done through the `devtools::install_github()` function or by downloading the [source package from the latest release](https://github.com/jayverhoef/POP).
+Installation of this R data package is done through the `devtools::install_github()` function or by downloading the [source package from the latest release](https://github.com/jayverhoef/POP). `**WARNING**` Some of the files in the package are over 50 Mb because they store Markov Chain Monte Carlo (MCMC) results for 11,000+ spatial polygons for 1,000 MCMC iterations.  It may take a while to install.
+
 
 ```
 library("devtools")
 install_github("jayverhoef/POP")
 ```
 
-Note that some of the files in the package are over 100 Mb because they store Markov Chain Monte Carlo (MCMC) results for 11,000+ spatial polygons for 2,000 MCMC iterations.  It may take a while to install.
 
 Data
 -------------
