@@ -5,7 +5,7 @@ DOI to be obtained from Zenodo on acceptance #[![DOI](https://zenodo.org/badge/D
 
 [![minimal R version](https://img.shields.io/badge/R%3E%3D-4.0.0-6666ff.svg)](https://cran.r-project.org/) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/kotzeb0912)](https://cran.r-project.org/package=kotzeb0912) [![packageversion](https://img.shields.io/badge/Package%20version-1.0.0-orange.svg?style=flat-square)](commits/master)
 
-[![Last-changedate](https://img.shields.io/badge/last%20change-2021--01--27-yellowgreen.svg)](/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2021--02--01-yellowgreen.svg)](/commits/master)
 
 # POP
 ## An R package in support of publication, "Species Density Models from Opportunistic Citizen Science Data." 
