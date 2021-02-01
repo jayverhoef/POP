@@ -5,13 +5,10 @@
 	library(classInt)
  	library(viridis)
   
-#	library(Matrix)
-
 	data(POPhexagons)
  	data(AKpoly)
 	data(GOA_NavyArea)
- 
-  
+   
 	data(nb_list)
 	data(SigiList)
 	data(detsig)
@@ -66,7 +63,9 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 
 	# crop figure
   system('pdfcrop Fig-study_area.pdf')
-
+  system('cp Fig-study_area-crop.pdf Fig-study_area.pdf')
+  system('rm Fig-study_area-crop.pdf')
+  
 
 #-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------
@@ -75,14 +74,13 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 #-------------------------------------------------------------------------------
 
 
-	pdf(file = paste0('Fig-raw_data.pdf'), width = 8, height = 14)
+	pdf(file = 'Fig-raw_data.pdf', width = 8, height = 14)
 			
 		layout(matrix(1:3, nrow = 3, byrow = TRUE))
 		par(mar = c(0,0,0,0))
     #create some break points for shipdays
 		fixedBreaks = c(1:2, 10, 30, 70, 
 			max(ptDF$shipdays, na.rm = TRUE) + 1e-10) - 1e-12
-    # find class intervals for shipdays based on breakpoints
 		f10 = classIntervals(ptDF$shipdays, style = 'fixed', 
 			fixedBreaks = fixedBreaks)
 		pal = viridis(length(fixedBreaks) - 1)
@@ -91,7 +89,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		plot(trueCentroids, col = 'grey80', add = TRUE, pch = 19, cex = .3)
 		plot(trueCentroids, col = f10Colours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .3)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Ship-Days', cex = 2.8, col = 'white')
 		text(650000,1600000,'Raw Effort', cex = 2.8, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, f10$brks, 
@@ -107,7 +104,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		plot(trueCentroids, col = 'grey80', add = TRUE, pch = 19, cex = .3)
 		plot(trueCentroids, col = f10Colours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .3)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Northern Fur Seals', cex = 2.8, col = 'white')
 		text(650000,1600000,'Raw Counts', cex = 2.8, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, f10$brks, 
@@ -123,7 +119,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		plot(trueCentroids, col = 'grey80', add = TRUE, pch = 19, cex = .3)
 		plot(trueCentroids, col = f10Colours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .3)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Steller Sea Lions', cex = 2.8, col = 'white')
 		text(650000,1600000,'Raw Counts', cex = 2.8, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, f10$brks, 
@@ -132,8 +127,10 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 	dev.off()
 
 	# crop figure
-  system("pdfcrop Fig-raw_data.pdf")
-
+  system('pdfcrop Fig-raw_data.pdf')
+  system('cp Fig-raw_data-crop.pdf Fig-raw_data.pdf')
+  system('rm Fig-raw_data-crop.pdf')
+ 
 #-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------
 #                            Fig-Fig-Effort
@@ -167,7 +164,7 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 	# create an indicator of effort greater than or equal to 1
 	ind_eff = !is.na(ptDF$shipdays)  |  MCMC_eff_mean >= 1
 
-	pdf(file = paste0('Fig-effort.pdf'), width = 10, height = 14)
+	pdf(file = 'Fig-effort.pdf', width = 10, height = 14)
 			
 		layout(matrix(1:2, nrow = 2, byrow = TRUE))
 		
@@ -182,7 +179,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		plot(trueCentroids, col = 'grey80', add = TRUE, pch = 19, cex = .3)
 		plot(trueCentroids, col = ffbColours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .3)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Ship-Days', cex = 1.7, col = 'white')
 		text(650000,1600000,'Zeros Added', cex = 1.7, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, ffb$brks, 
@@ -199,7 +195,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		plot(trueCentroids, col = 'grey80', add = TRUE, pch = 19, cex = .3)
 		plot(trueCentroids, col = f10Colours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .3)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Ship-Days', cex = 1.7, col = 'white')
 		text(650000,1600000,'Model Fit', cex = 1.7, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, f10$brks, 
@@ -209,6 +204,8 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 
 	# crop figure
   system("pdfcrop Fig-effort.pdf")
+  system('cp Fig-effort-crop.pdf Fig-effort.pdf')
+  system('rm Fig-effort-crop.pdf')
 
 
 #-------------------------------------------------------------------------------
@@ -233,7 +230,7 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
   CU_post = apply(temp_CU,1,mode)
   CU_post = pmax(CU_post,0)
 
-	pdf(file = paste0('Fig-FurSealFit.pdf'), width = 10, height = 14)
+	pdf(file = 'Fig-FurSealFit.pdf', width = 10, height = 14)
 			
 		layout(matrix(1:2, nrow = 2, byrow = TRUE))
 		
@@ -248,7 +245,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		plot(trueCentroids, col = 'grey80', add = TRUE, pch = 19, cex = .3)
 		plot(trueCentroids, col = ffbColours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .3)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Northern Fur Seals', cex = 1.7, col = 'white')
 		text(650000,1600000,'Zeros Added', cex = 1.7, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, ffb$brks, 
@@ -257,13 +253,11 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 
     fixedBreaks = c(0, .1, .2, .4, .8, 3, max(CU_post, na.rm = TRUE) + 1e-10) - 1e-12
 		f10 = classIntervals(CU_post, style = 'fixed', fixedBreaks = fixedBreaks)
-	#  f10 = classIntervals(CU_post, n = 6, style = 'fisher')
 		pal = viridis(length(f10$brks) - 1)
 		f10Colours = findColours(f10, pal)
 		plot(AKpoly[1:100,], col = 'grey20')
 		plot(trueCentroids, col = f10Colours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .3)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Northern Fur Seals', cex = 1.7, col = 'white')
 		text(650000,1600000,'Model Fit', cex = 1.7, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, f10$brks, 
@@ -273,6 +267,8 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 
 	# crop figure
   system("pdfcrop Fig-FurSealFit.pdf")
+  system('cp Fig-FurSealFit-crop.pdf Fig-FurSealFit.pdf')
+  system('rm Fig-FurSealFit-crop.pdf')
 
 #-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------
@@ -310,7 +306,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		plot(trueCentroids, col = 'grey80', add = TRUE, pch = 19, cex = .3)
 		plot(trueCentroids, col = ffbColours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .3)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Steller Sea Lions', cex = 1.7, col = 'white')
 		text(650000,1600000,'Zeros Added', cex = 1.7, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, ffb$brks, 
@@ -320,13 +315,11 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		fixedBreaks = c(0, .1, .2, .5, 1, 5, 
 			max(EJ_post, na.rm = TRUE) + 1e-10) - 1e-12
 		f10 = classIntervals(EJ_post, style = 'fixed', fixedBreaks = fixedBreaks)
-	#  f10 = classIntervals(EJ_post, n = 9, style = 'fisher')
 		pal = viridis(length(f10$brks) - 1)
 		f10Colours = findColours(f10, pal)
 		plot(AKpoly[1:100,], col = 'grey20')
 		plot(trueCentroids, col = f10Colours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .3)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Steller Sea Lions', cex = 1.7, col = 'white')
 		text(650000,1600000,'Model Fit', cex = 1.7, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, f10$brks, 
@@ -336,6 +329,8 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 
 	# crop figure
   system("pdfcrop Fig-SeaLionFit.pdf")
+  system('cp Fig-SeaLionFit-crop.pdf Fig-SeaLionFit.pdf')
+  system('rm Fig-SeaLionFit-crop.pdf')
 
 
 #-------------------------------------------------------------------------------
@@ -352,7 +347,7 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
   sd_zmat_EJ = apply(MCMC_EJ_zmat,1,sd)
   sd_EJ = apply(temp_EJ,1,sd)
 
-	pdf(file = paste0('Fig-Uncertainty.pdf'), width = 10, height = 14)
+	pdf(file = 'Fig-Uncertainty.pdf', width = 10, height = 14)
 		
 		layout(matrix(1:6, nrow = 3, byrow = TRUE))
 
@@ -360,14 +355,12 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 			max(sd_zmat_eff) + 1e-10) - 1e-12
 		ffb = classIntervals(sd_zmat_eff, style = 'fixed', 
 			fixedBreaks = fixedBreaks)
-	#  ffb = classIntervals(sd_zmat_eff, n = 6, style = 'fisher')
 		pal = viridis(length(ffb$brks) - 1)
 		ffbColours = findColours(ffb, pal)
 		par(mar = c(0,0,0,0))
 		plot(AKpoly[1:100,], col = 'grey20')
 		plot(trueCentroids, col = ffbColours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .2)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Ship-Days', cex = 1.5, col = 'white')
 		text(650000,1600000,'R-Uncertainty', cex = 1.5, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, ffb$brks, 
@@ -378,13 +371,11 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		fixedBreaks = c(0, .7, 1.6, 2.8, 4.4, 7.5,
 			max(sd_eff) + 1e-10) - 1e-12
 		f10 = classIntervals(sd_eff, style = 'fixed', fixedBreaks = fixedBreaks)
-	#  f10 = classIntervals(sd_eff, n = 6, style = 'fisher')
 		pal = viridis(length(f10$brks) - 1)
 		f10Colours = findColours(f10, pal)
 		plot(AKpoly[1:100,], col = 'grey20')
 		plot(trueCentroids, col = f10Colours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .2)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Ship-Days', cex = 1.5, col = 'white')
 		text(650000,1600000,'Mean-Uncertainty', cex = 1.5, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, f10$brks, 
@@ -394,14 +385,12 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		fixedBreaks = c(0, .7, .9, 1.1, 1.3, 1.7, 
 			max(sd_zmat_CU) + 1e-10) - 1e-12
 		ffb = classIntervals(sd_zmat_CU, style = 'fixed', fixedBreaks = fixedBreaks)
-	#  ffb = classIntervals(sd_zmat_CU, n = 6, style = 'fisher')
 		pal = viridis(length(ffb$brks) - 1)
 		ffbColours = findColours(ffb, pal)
 		par(mar = c(0,0,0,0))
 		plot(AKpoly[1:100,], col = 'grey20')
 		plot(trueCentroids, col = ffbColours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .2)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Northern Fur Seals', cex = 1.5, col = 'white')
 		text(650000,1600000,'Z-Uncertainty', cex = 1.5, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, ffb$brks, 
@@ -411,14 +400,12 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		fixedBreaks = c(0, .2, .5, 1.2, 2.2, 3.4, 
 			max(sd_CU) + 1e-10) - 1e-12
 		ffb = classIntervals(sd_CU, style = 'fixed', fixedBreaks = fixedBreaks)
-	#  ffb = classIntervals(sd_CU, n = 6, style = 'fisher')
 		pal = viridis(length(ffb$brks) - 1)
 		ffbColours = findColours(ffb, pal)
 		par(mar = c(0,0,0,0))
 		plot(AKpoly[1:100,], col = 'grey20')
 		plot(trueCentroids, col = ffbColours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .2)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Northern Fur Seals', cex = 1.5, col = 'white')
 		text(650000,1600000,'Mean-Uncertainty', cex = 1.5, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, ffb$brks, 
@@ -428,14 +415,12 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		fixedBreaks = c(0, .9, 1.1, 1.3, 1.5, 2,
 			max(sd_zmat_EJ) + 1e-10) - 1e-12
 		ffb = classIntervals(sd_zmat_EJ, style = 'fixed', fixedBreaks = fixedBreaks)
-	#  ffb = classIntervals(sd_zmat_EJ, n = 6, style = 'fisher')
 		pal = viridis(length(ffb$brks) - 1)
 		ffbColours = findColours(ffb, pal)
 		par(mar = c(0,0,0,0))
 		plot(AKpoly[1:100,], col = 'grey20')
 		plot(trueCentroids, col = ffbColours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .2)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Steller Sea Lions', cex = 1.5, col = 'white')
 		text(650000,1600000,'Z-Uncertainty', cex = 1.5, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, ffb$brks, 
@@ -445,14 +430,12 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		fixedBreaks = c(0, .3, .8, 1.5, 2.5, 4.6, 
 			max(sd_EJ) + 1e-10) - 1e-12
 		ffb = classIntervals(sd_EJ, style = 'fixed', fixedBreaks = fixedBreaks)
-	#  ffb = classIntervals(sd_EJ, n = 6, style = 'fisher')
 		pal = viridis(length(ffb$brks) - 1)
 		ffbColours = findColours(ffb, pal)
 		par(mar = c(0,0,0,0))
 		plot(AKpoly[1:100,], col = 'grey20')
 		plot(trueCentroids, col = ffbColours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .2)
-#		plot(AKpoly[1:100,], add = TRUE, border = 'black')
 		text(650000,1850000,'Steller Sea Lions', cex = 1.5, col = 'white')
 		text(650000,1600000,'Mean-Uncertainty', cex = 1.5, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, ffb$brks, 
@@ -463,6 +446,8 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 
 	# crop figure
   system("pdfcrop Fig-Uncertainty.pdf")
+  system('cp Fig-Uncertainty-crop.pdf Fig-Uncertainty.pdf')
+  system('rm Fig-Uncertainty-crop.pdf')
 
 #-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------
@@ -499,7 +484,7 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
   for(i in 1:dim(MCMC_EJ_zmat)[2])
 	  EJ_GOA_abu = c(EJ_GOA_abu, sum(EJ_dens[overlay_indx,i]))
  
-	pdf(file = paste0('Fig-GOAabu.pdf'), width = 9, height = 9)
+	pdf(file = 'Fig-GOAabu.pdf', width = 9, height = 9)
 
 		layout(matrix(1:6, nrow = 2, byrow = TRUE), widths = c(3,1,3))
 
@@ -507,7 +492,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 			max(CU_dens_post[overlay_indx], na.rm = TRUE) + 1e-10) - 1e-12
 		f10 = classIntervals(CU_dens_post, style = 'fixed', 
 			fixedBreaks = fixedBreaks)
-	#  f10 = classIntervals(CU_dens_post[overlay_indx], n = 6, style = 'fisher')
 		pal = viridis(length(f10$brks) - 1)
 		f10Colours = findColours(f10, pal)
 		par(mar = c(0,5,7,0))
@@ -517,8 +501,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 			lwd = .5, pch = 19, cex = .6)
 		plot(trueCentroids[overlay_indx,], col = f10Colours[overlay_indx], 
 			add = TRUE, lwd = .5, pch = 19, cex = .6)
-#		plot(AKpoly[1:100,], col = 'grey20', add = TRUE)
-# 	text(-390000, 2528054,'A', cex = 6)
 		mtext('A', adj = -.1, cex = 3)
 		par(mar = c(0,0,0,0))
 		plot(c(0,1), c(0,1), type = 'n', xaxt = 'n', yaxt = 'n', bty = 'n')
@@ -536,7 +518,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 			max(EJ_dens_post[overlay_indx], na.rm = TRUE) + 1e-10) - 1e-12
 		f10 = classIntervals(EJ_dens_post, style = 'fixed', 
 			fixedBreaks = fixedBreaks)
-	#  classIntervals(EJ_dens_post[overlay_indx], n = 8, style = 'fisher')
 		pal = viridis(length(f10$brks) - 1)
 		f10Colours = findColours(f10, pal)
 		par(mar = c(0,5,7,0))
@@ -546,8 +527,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 			lwd = .5, pch = 19, cex = .6)
 		plot(trueCentroids[overlay_indx,], col = f10Colours[overlay_indx], 
 			add = TRUE, lwd = .5, pch = 19, cex = .6)
-#		plot(AKpoly[1:100,], col = 'grey20', add = TRUE)
-# 	text(-390000, 2528054,'A', cex = 6)
 		mtext('C', adj = -.1, cex = 3)
 		par(mar = c(0,0,0,0))
 		plot(c(0,1), c(0,1), type = 'n', xaxt = 'n', yaxt = 'n', bty = 'n')
@@ -564,6 +543,8 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 	
 	# crop figure
   system("pdfcrop Fig-GOAabu.pdf")
+  system('cp Fig-GOAabu-crop.pdf Fig-GOAabu.pdf')
+  system('rm Fig-GOAabu-crop.pdf')
 
 #-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------
@@ -571,7 +552,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 #-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------
   
-	l
 	smoo_CU_post = apply(MCMC_CU_smoo,1,mean)
 	smoosd_CU_post = apply(MCMC_CU_smoo,1,sd)
 	smoo_EJ_post = apply(MCMC_EJ_smoo,1,mean)
@@ -587,13 +567,11 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 			max(smoo_CU_post, na.rm = TRUE) + 1e-10) - 1e-12
 		f10 = classIntervals(smoo_CU_post, style = 'fixed', 
 			fixedBreaks = fixedBreaks)
-	# f10 = classIntervals(smoo_CU_post, n = 6, style = 'fisher')
 		pal = viridis(length(f10$brks) - 1)
 		f10Colours = findColours(f10, pal)
 		plot(AKpoly[1:100,], col = 'grey20')
 		plot(trueCentroids, col = f10Colours, 
 			add = TRUE, lwd = .5, pch = 19, cex = .2)
-#		plot(AKpoly[1:100,], col = 'grey20', add = TRUE)
 		text(650000,1850000,'Northern Fur Seals', cex = 1.5, col = 'white')
 		text(650000,1600000,'Smoothed Model Fit', cex = 1.5, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, f10$brks, 
@@ -612,7 +590,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 		plot(AKpoly[1:100,], col = 'grey20')
 		plot(trueCentroids, col = f10Colours, add = TRUE, lwd = .5, 
 			pch = 19, cex = .2)
-#		plot(AKpoly[1:100,], col = 'grey20', add = TRUE)
 		text(650000,1850000,'Northern Fur Seals', cex = 1.5, col = 'white')
 		text(650000,1600000,'Certain Hotspots', cex = 1.5, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, f10$brks, 
@@ -623,13 +600,11 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 			max(smoo_EJ_post, na.rm = TRUE) + 1e-10) - 1e-12
 		f10 = classIntervals(smoo_EJ_post, style = 'fixed', 
 			fixedBreaks = fixedBreaks)
-	# f10 = classIntervals(smoo_EJ_post, n = 6, style = 'fisher')
 		pal = viridis(length(f10$brks) - 1)
 		f10Colours = findColours(f10, pal)
 		plot(AKpoly[1:100,], col = 'grey20')
 		plot(trueCentroids, col = f10Colours, 
 			add = TRUE, lwd = .5, pch = 19, cex = .2)
-#		plot(AKpoly[1:100,], col = 'grey20', add = TRUE)
 		text(650000,1850000,'Steller Sea Lions', cex = 1.5, col = 'white')
 		text(650000,1600000,'Smoothed Model Fit', cex = 1.5, col = 'white')
 		addBreakColorLegend(2000000, 1300000, 2200000, 2600000, f10$brks, 
@@ -659,4 +634,6 @@ setwd(paste0('/home/jay/data/2019_papers/POP',
 
 	# crop figure
   system("pdfcrop Fig-SmooHotSpots.pdf")
+  system('cp Fig-SmooHotSpots-crop.pdf Fig-SmooHotSpots.pdf')
+  system('rm Fig-SmooHotSpots-crop.pdf')
 
