@@ -15,9 +15,9 @@ DOI to be obtained from Zenodo on acceptance #[![DOI](https://zenodo.org/badge/D
 #### <sup>a</sup>NOAA Fisheries (NMFS) Alaska Fisheries Science Center, Marine Mammal Laboratory, Seattle, WA
 #### <sup>b</sup>Department of Statistics, St. Lawrence University, Canton, NY
 
-As a scientific work, and in keeping with common scientific practicies, I kindly request that you cite my research project and applicable publications if you use my work(s) or data in your publications or presentations. Additionally, I strongly encourage and welcome collaboration to promote use of these data in the proper context and scope.  The publication is currently submitted:
+As a scientific work, and in keeping with common scientific practicies, I kindly request that you cite my research project and applicable publications if you use my work(s) or data in your publications or presentations. Additionally, I strongly encourage and welcome collaboration to promote use of these data in the proper context and scope.  The publication is currently accepted for publication in <em>Methods in Ecology and Evolution</em>:
 
-#### Ver Hoef, J.M., Johnson, D., Angliss, R., and Higham, M. 2021. Species Density Models from Opportunistic Citizen Science Data. In submission.
+#### Ver Hoef, J.M., Johnson, D., Angliss, R., and Higham, M. 2021. Species Density Models from Opportunistic Citizen Science Data. In press, <em>Methods in Ecology and Evolution</em>.
 
 
 Abstract
